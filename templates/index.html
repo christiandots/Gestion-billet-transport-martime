@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon">
+    <title>Logistics Website</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <style>
+    
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="nav-top">
+            <div class="logo">
+                <img src=" {% static 'image/Untitled.png' %} " alt="Logo">
+                <span class="theme">PRIDE EXPRESS</span>
+            </div>
+        </div>
+        <span class="menu">Menu</span>
+        <ul class="nav-menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#gallery-container">About Us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#global-presence">Careers</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </header>
+
+    <section class="main">
+        <h1>RELIABLE LOGISTICS SOLUTIONS FOR MODERN BUSINESSES</h1>
+        <p>We promise seamless delivery and end-to-end solutions tailored to your business needs.</p>
+        <div class="cta">
+            <a href="#">Get a Quote</a>
+            <a href="#">Learn More</a>
+        </div>
+    </section>
+
+    <section class="tracking">
+        <h2>Track Shipment</h2>
+        <input type="text" placeholder="Enter Your Tracking ID">
+        <button>Track Now</button>
+    </section>
+
+    <section class="services">
+        <div class="service">
+            <img src=" {% static 'image/Untitled.jpg' %} " alt="Cargo Air Freight">
+            <h3 style="color: blue;">Cargo Air Freight</h3>
+            <div class="dots"></div>
+        </div>
+        <div class="service bas">
+            <div class="dot"></div>
+            <img src=" {% static 'image/Untitled.jpg' %} " alt="Bulk Cargo Ship" class="bas">
+            <h3 style="color: blue;">Bulk Cargo Ship</h3>
+        </div>
+        <div class="service">
+            <img src=" {% static 'image/Untitled3.jpg' %} " alt="Container Ship">
+            <h3 style="color: blue;">Container Ship</h3>
+            
+        </div>
+    </section>
+
+    <section class="charts">
+        <div class="chart">
+            <img src=" {% static 'image/Untitled.png' %} " alt="Chart 1">
+        </div>
+        <div class="chart">
+            <img src=" {% static 'image/Untitled.png' %} " alt="Chart 2">
+        </div>
+    </section>
+
+    <section class="global-presence">
+        <div class="Global">
+            <div class="flex">
+              <h2 style="text-align: center;">Global Presence</h2>
+              <div class="rond"></div>
+              <div class="tsipika"></div>
+            </div>
+            <p style="color: blue;">Lorem ipsum is simply dummy text of the printing and typesetting industry.</p>
+            <div class="map">
+                <img src=" {% static 'image/Untitled1.jpg' %} " alt="Global Map">
+            </div>
+        </div>
+        <div class="stats">
+            <div class="stat">
+                <h3>1649</h3>
+                <p>Lorem Ipsum</p>
+            </div>
+            <div class="stat">
+                <h3>1649</h3>
+                <p>Lorem Ipsum</p>
+            </div>
+            <div class="stat">
+                <h3>1649</h3>
+                <p>Lorem Ipsum</p>
+            </div>
+            <div class="stat">
+                <h3>1649</h3>
+                <p>Lorem Ipsum</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="gallery-container">
+        <h1>Publicite de touts les contenues publique</h1> <!-- Titre principal -->
+        <div class="image-container">
+            <div class="image-item">
+                <img src="{% static 'image/Untitled.jpg' %}" alt="Image 1">
+            </div>
+            <div class="image-item">
+                <img src="{% static 'image/Untitled.png' %}" alt="Image 2">
+            </div>
+            <div class="image-item">
+                <img src="{% static 'image/Untitled.png' %}" alt="Image 3">
+            </div>
+            <div class="image-item">
+                <img src="{% static 'image/Untitled.png' %}" alt="Image 4">
+            </div>
+            <div class="image-item">
+                <img src="{% static 'image/Untitled.png' %}" alt="Image 5">
+            </div>
+        </div>
+        <div class="cta">
+            <a href="#">Learn More</a>
+        </div>
+    </div>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <div class="container">
+            <!-- Formulaire de contact -->
+            <form>
+                <div class="input">
+                    <input type="text" placeholder="Votre pseudo ..." />
+                    <input type="email" placeholder="Votre adresse e-mail ..." />
+                </div>
+                <textarea cols="30" rows="10" placeholder="Votre message ..."></textarea>
+                <button>Envoyer</button>
+            </form>
+            <!-- Liens de contact -->
+            <ul>
+                <li>
+                    <a href="#">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M14 13.5H16.5L17.5 9.5H14V7.5C14 6.47062 14 5.5 16 5.5H17.5V2.1401C17.1743 2.09685 15.943 2 14.6429 2C11.9284 2 10 3.65686 10 6.69971V9.5H7V13.5H10V22H14V13.5Z"/>
+                        </svg>
+                        Pride Express
+                    </a>
+                </li>
+                <li>
+                    <a href="mailto:prideExpress@gmail.com">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M14 13.5H16.5L17.5 9.5H14V7.5C14 6.47062 14 5.5 16 5.5H17.5V2.1401C17.1743 2.09685 15.943 2 14.6429 2C11.9284 2 10 3.65686 10 6.69971V9.5H7V13.5H10V22H14V13.5Z"/>
+                        </svg>
+                        prideExpress@gmail.com
+                    </a>
+                </li>
+                <li>
+                    <a href="tel:0381234567">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" class="feather feather-phone">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                        </svg>
+                        038 xxx xxx xxx
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- footer platform -->
+    <footer>
+        <div class="footer-section">
+            <div>
+                <h4>Get Support</h4>
+                <div class="footer-links">
+                    <ul>
+                        <li>Help Center</li>
+                        <li>Live Chat</li>
+                        <li>Check Order Status</li>
+                        <li>Refunds</li>
+                        <li>Report Abuse</li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <h4>Payments and Protections</h4>
+                <div class="footer-links">
+                    <ul>
+                        <li>Safe and Easy Payments</li>
+                        <li>Money-back Policy</li>
+                        <li>On-time Shipping</li>
+                        <li>After-sales Protections</li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <h4>Source on Pride Express</h4>
+                <div class="footer-links">
+                    <ul>
+                        <li>Request for Quotation</li>
+                        <li>Membership Program</li>
+                        <li>Alibaba Logistics</li>
+                        <li>Sales Tax and VAT</li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <h4>Sell on Pride Express</h4>
+                <div class="footer-links">
+                    <ul>
+                        <li>Start Selling</li>
+                        <li>Seller Central</li>
+                        <li>Become a Verified Supplier</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="social-icons">
+            <img src=" {% static 'image/facebook.svg' %} " alt="Facebook">
+            <img src=" {% static 'image/linkdln.png' %} " alt="LinkedIn">
+            <img src=" {% static 'image/X.png' %} " alt="Twitter">
+            <img src=" {% static 'image/insta.jpg' %} " alt="Instagram">
+            <img src=" {% static 'image/tiktok.jpg' %} " alt="TikTok">
+        </div>
+
+        <div class="bottom-footer">
+            &copy; 2024 Pride Express. All rights reserved.
+        </div>
+    </footer>
+</body>
+</html>
